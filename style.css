@@ -11,15 +11,21 @@ body{
 h1{
     margin: 0;
     font-size: 40px;
-    background-color: black;
-    color:white;
+    background-color: white;
+    color:black;
     border-radius: 20px;
     width: 40%;
     margin-bottom: 30px;
+    /*
     box-shadow: 0 0 30px 5px black;
+  */
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+}
+
+h2{
+    font-size: 30px;
 }
 
 #container{
@@ -109,6 +115,6 @@ h1{
 .tresc, .tresc2{
     padding-top: 80px;
     padding-bottom: 80px;
-    font-size: 32px;
+    font-size: 20px;
     
 }

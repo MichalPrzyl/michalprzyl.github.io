@@ -1,5 +1,27 @@
 O mnie
 Witam. Nazywam się Michał Przyłucki. Mieszkam w Krakowie. Studiuję zaocznie na Wyższej Szkoły Ekonomii i Innowacji w Lublinie na kierunku Informatyka. 
 Zajmuję się programowaniem, głównie front-endu, ale znam też wiele innych technologii. Nie jest mi obce skryptowanie w Pythonie, obsługa baz danych, prowadzenie stron na WordPressie czy choćby pisanie gier na silniku Unity używając C#.
+Programowanie to moja pasja odkąd pamietam. Dlatego też w wolnym czasie zajmuję się również tym. Gdy jednak chcę odetchnąć zajmuję się elektroniką (bądź co bądź to nadal programowanie tylko że mikrokontrolerów), motoryzacją oraz gram w siatkówkę.
+Interesuję się również Cyberbezpieczeństwem. Brałem udział w wielu wyzwaniach typu CTF (Capture The Flag).
 
 Umiejętności
+
+Technologie:
+- C++ (włącznie z OOP)
+- Java 
+- Python (automatyzoawnie powtarzalnych procesów w biurze rachunkowym)
+- C# oraz .NET 
+- MySQL (obsługa baz danych oraz ich administracja)
+- HTML
+- CSS
+- JavaScript
+- php (łaczenie się z bazą danych z poziomu WWW)
+- WordPress (prowadziłem kilka stron, w tym także sklepy online)
+- Git
+- REGEX
+
+Umiejętności:
+- administracja systemu Linux
+- Znajomość pakietu Office
+- Znajomość Photoshopa
+- Znajmość 
