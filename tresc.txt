@@ -1,0 +1,5 @@
+O mnie
+Witam. Nazywam się Michał Przyłucki. Mieszkam w Krakowie. Studiuję zaocznie na Wyższej Szkoły Ekonomii i Innowacji w Lublinie na kierunku Informatyka. 
+Zajmuję się programowaniem, głównie front-endu, ale znam też wiele innych technologii. Nie jest mi obce skryptowanie w Pythonie, obsługa baz danych, prowadzenie stron na WordPressie czy choćby pisanie gier na silniku Unity używając C#.
+
+Umiejętności
