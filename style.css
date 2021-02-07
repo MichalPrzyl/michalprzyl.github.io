@@ -118,3 +118,30 @@ h2{
     font-size: 20px;
     
 }
+
+
+
+
+
+#skills{
+
+width: 70%;
+margin: 0 auto;
+}
+
+#skillsLeft{
+    width: 40%;
+}
+
+#skillsRight{
+    margin-left: 30%;
+    
+}
+
+
+#skillsLeft, #skillsRight{
+    float: left;
+    font-size: 20px;
+    
+       
+}
