@@ -48,6 +48,7 @@ h1{
 }
 
 #omnie{
+    
     line-height: 1.5em;
     height: 100%;
     width: 80%;
@@ -59,7 +60,9 @@ h1{
 
 
 #omnie p{
+    margin-top: 100px;
     font-family: 'Poppins', sans-serif;
+    font-size: 20px;
 }
 
 #skillsLink{
