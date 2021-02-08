@@ -1,0 +1,126 @@
+*{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+#container{
+    width:100%;
+    height: 100%;
+    background-image: url("background.jpg");
+    background-size: 100%;
+}
+
+#main{
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+}
+
+#more{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#more a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px 20px;
+    border-radius: 15px;
+    transition: background-color 0.5s;
+}
+
+#more a:hover{
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#omnie{
+    line-height: 1.5em;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 30px;
+    position: relative;
+}
+
+
+#omnie p{
+    font-family: 'Poppins', sans-serif;
+}
+
+#skillsLink{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, 0);
+}
+
+#skillsLink a{
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: black;
+    transition: background-color .5s;
+}
+
+#skillsLink a:hover{
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#skills{
+    height: 100%;
+    width: 100%;
+    background-image: url("background.jpg");
+}
+
+#skills2{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#skills2 h1{
+    color:white;
+    padding-top: 30px;
+}
+
+#tech{
+    margin-top: 120px;
+}
+
+#techLeft{
+    margin-right: 20%;
+}
+
+#techRight{
+    
+}
+
+#techLeft, #techRight{
+    float: left;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+#techLeft h1, #techRight h1{
+    font-size: 20px;
+}
+
+#techLeft p, #techRight p{
+    font-size: 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}

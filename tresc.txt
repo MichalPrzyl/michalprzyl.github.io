@@ -20,7 +20,7 @@ Technologie:
 - Git
 - REGEX
 
-Umiejętności:
+Inne:
 - administracja systemu Linux
 - Znajomość pakietu Office
 - Znajomość Photoshopa
