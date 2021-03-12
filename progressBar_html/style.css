@@ -1,0 +1,53 @@
+body{
+    background: #42eff5;
+}
+
+.container{
+}
+
+.skill{
+    margin-top: 30px;
+}
+
+.skill-label{
+    display: flex;
+    justify-content: center;
+    float: left;
+    width: 150px;
+    background: #32bbbf;
+    color: white;
+    font-size: 20px;
+}
+
+.percent{
+    background: #32bbbf;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    float: left;
+}
+
+.progressBar{
+    float: left;
+    width: 300px;
+    border: 1px solid white;
+    height: 20px;
+}
+
+.progressBar-inside{
+ height: 100%;
+ background: white;
+ animation: left-to-right 3s forwards ease-in-out;
+}
+
+@keyframes left-to-right{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        
+    }
+}
