@@ -4,10 +4,18 @@ body {
     margin: 0;
     color: white;
     scroll-behavior: smooth;
+    font-family: 'Rajdhani', sans-serif;
+    /* background: linear-gradient(90deg, rgba(39,39,39,1) 0%, rgba(128,128,128,1) 100%); */
+    /* background: linear-gradient(90deg, rgba(39,39,39,1) 0%, rgba(0,0,0,1) 100%); */
+    /* background: linear-gradient(-90deg, rgba(39,39,39,1) 0%, rgba(0,0,0,1) 100%); */
+    /* background: linear-gradient(90deg, rgba(84,84,84,1) 0%, rgba(56,56,56,1) 100%); */
+    /* background: linear-gradient(-90deg, rgba(31,31,31,1) 0%, rgba(56,56,56,1) 100%);  */
+    background: linear-gradient(135deg, rgba(31,31,31,1) 0%, rgba(56,56,56,1) 100%);
+
 }
 
 .first-screen {
-    background: #272727;
+    /* background: #272727; */
     height: 100%;
     display: flex;
 }
@@ -58,6 +66,9 @@ body {
     margin-right: auto;
     font-size: 1.5em;
 }
+
+
+
 .more-btn a{
     text-decoration: none;
     color: white;
@@ -65,11 +76,18 @@ body {
     border-radius: 30px;
     padding: 10px 20px;
     box-shadow: 5px 5px 20px 4px black;
+    transition: background .2s;
+
+}
+
+.more-btn a:hover{
+    background: #665677;
+    
 }
 
 /* second screen */
 .second-screen{
-    background: #272727;
+    /* background: #272727; */
     height: 100%;
 }
 .about-me-header-wrapper{
@@ -83,5 +101,30 @@ body {
     text-align: center;
     width: 40%;
     margin-left: auto;
+    background: #5C11AA;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 4px black;
+    padding: 15px;
     margin-right: auto;
+}
+
+.about-me-description{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 4%;
+    font-size: 1.5em;
+    line-height: 1.8em;
+}
+
+li{
+    line-height: 1.8em;
+    /* border: 3px solid white; */
+}
+
+h1{
+    /* color: #5C11AA; */
+    /* border: 3px solid white; */
+
+
+
 }
