@@ -1,0 +1,87 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+.first-screen {
+    background: #272727;
+    height: 100%;
+    display: flex;
+}
+
+.left-side {
+    width: 70%;
+}
+
+.right-side {
+    margin-top: 5%;
+}
+
+.photo-wrapper {
+    border-radius: 50% 0 0 50%;
+    border: 2px solid white;
+    overflow: hidden;
+}
+
+.textes{
+    font-family: 'Rajdhani', sans-serif;
+    position: relative;
+    left: 25%;
+    top: 25%;
+    /* border: 1px solid white; */
+    width: fit-content;
+}
+
+.name {
+    font-size: 80px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+.subname {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+    letter-spacing: 5px;
+}
+
+.more-btn{
+    text-align: center;
+    margin-top: 65%;
+    /* border: 1px solid white; */
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.5em;
+}
+.more-btn a{
+    text-decoration: none;
+    color: white;
+    background: #5C11AA;
+    border-radius: 30px;
+    padding: 10px 20px;
+    box-shadow: 5px 5px 20px 4px black;
+}
+
+/* second screen */
+.second-screen{
+    background: #272727;
+    height: 100%;
+}
+.about-me-header-wrapper{
+    padding-top: 5%;
+}
+
+.about-me-header{
+    font-family: 'Rajdhani', sans-serif;
+    border: 3px solid white;
+    font-size: 4em;
+    text-align: center;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
