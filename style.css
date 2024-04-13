@@ -21,3 +21,20 @@ h1{
 h2{
   /* font-size: 18; */
 }
+
+.image-separator{
+  background-image: url("logo.jpg");
+  border: 1px solid #3b3b3b;
+  border-radius: 15px;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 0 auto;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  padding: 0;
+}
+
+hr{
+  margin: 40px 0 40px 0;
+}
