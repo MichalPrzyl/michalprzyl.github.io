@@ -153,7 +153,7 @@ Nie będę kłamał. Jeżeli chodzi o praktykę to w php spędziłem najmniej go
 Ponadto jestem bardzo ciekawy samego języka. Chciałbym w przyszłości lepiej zrozumieć fenomen całego języka oraz powody, dla których większość dzisiejszego internetu wykorzystuje jego funkcjonalności.
 
 
-# Java
+## Java
 
 W skrócie:
 Nie moja bajka, nie moje kredki.
