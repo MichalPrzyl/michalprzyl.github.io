@@ -194,7 +194,5 @@ Najlepszym sposobem kontaktu do mnie e-mail.
 E-mail: **michal.przyl@gmail.com**
 
 
-
-
-
-
+# TODO
+- [ ] dopisać do sekcji "# Inne języki programowania, których używałem" języki: HTML, CSS, JavaScript. Napisać coś w stylu, że HTML pisałem od 9 roku życia. Pomimo, że html to nie programming language to dla 9-latka wpisanie "body style="background: red;" to zmieni tło swojego "programu" - dla niego to programowanie!!! CSS: na pewno pełnoprawny frontendowiec powie, że potrafi zrobić to lepiej, jednak swoje strony tworzę odkąd pamiętam. Nie jestem osobą posiadającą wysublimowane wyczucie stylu i kolorów (co widać po tej stronie :D ), ale na pewno nie są mi straszne flexboxy, czy centrowanie divów :) JavaScript: również odkąd pamiętam. Tworzenie gier w canvasach, wizualizacji, własnych wykresów, symulacji, nawet próba stworzenia własnego silnika do wyświetlania scen 3D.
