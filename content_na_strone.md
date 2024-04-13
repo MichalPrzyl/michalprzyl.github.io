@@ -5,7 +5,7 @@ Nazywam się Michał Przyłucki. Jestem programistą, DevOpsem, Team Leadem oraz
 
 # Czym się zajmuję
 
-Zajmuję się wszystkim co można by opisać frazą "Dostarczanie oprogramowania", począwszy od kontaktu z klientem, przez definicję wymagań, implementację rozwiązań, tworzenie dokumentacji, testowanie, dostarczenie rozwiązania, CI/CD aż po szkolenia (administratorów oraz pracownikó) oraz monitoring.
+Zajmuję się wszystkim co można by opisać frazą "Dostarczanie oprogramowania", począwszy od kontaktu z klientem, przez definicję wymagań, implementację rozwiązań, tworzenie dokumentacji, testowanie, dostarczenie rozwiązania, CI/CD aż po szkolenia (administratorów oraz pracowników) oraz monitoring.
 
 Na codzień dostarczam rozwiązania dla aplikacji wykorzystywanych w laboratoriach w branżach medycznych oraz produkcyjnych.
 
@@ -38,7 +38,7 @@ Regularnie przeprowadzam szkolenia z zakresu IT. Prowadzone przeze mnie szkoleni
 
 ## Team leading
 
-Pomimo wielu obowiązków, związanych z codzienną pracą, jestem często odpowiedzialny za rozpisanie tasków oraz przypisanie ich do odpowiednich członków zespołu, tak aby praca całego teamu była jak najabrdziej zoptymalizowana i efektywna. Często też koordynuję pracę poszczególnych "podzespołów" tak aby wszystkie klocki aplikacji trafiły na swoje miejsce w odpowiednich interwałach czasowych.
+Pomimo wielu obowiązków, związanych z codzienną pracą, jestem często odpowiedzialny za rozpisanie tasków oraz przypisanie ich do odpowiednich członków zespołu, tak aby praca całego teamu była jak najbardziej zoptymalizowana i efektywna. Często też koordynuję pracę poszczególnych "podzespołów" tak aby wszystkie klocki aplikacji trafiły na swoje miejsce w odpowiednich interwałach czasowych.
 
 
 ## Jenkins maintenance
@@ -63,7 +63,7 @@ Jestem odpowiedzialny za tworzenie, utrzymanie oraz aktualizację środowisk. Oc
 
 ## Emergency actions
 
-Najmniej przyjemna część mojej pracy to własnie tzw. "Emergency actions". Idealnym przykładem takiej akcji jest wgranie hotfixa na proda, albo natychmiastowa poprawka na konkretnym środowisku klienta. Zdecydowanie jestem zwolennikiem używania środowisk przygotowawczych, natomiast na przestrzeni lat nie sposób uniknąć sytuacji awaryjnej, nawet przy najwyższej jakości testach. W takim wypadku zdarza się konieczność wgrania ręcznie małej poprawki na serwerze produkcyjnym. To moja działka.
+Najmniej przyjemna część mojej pracy to właśnie tzw. "Emergency actions". Idealnym przykładem takiej akcji jest wgranie hotfixa na proda, albo natychmiastowa poprawka na konkretnym środowisku klienta. Zdecydowanie jestem zwolennikiem używania środowisk przygotowawczych, natomiast na przestrzeni lat nie sposób uniknąć sytuacji awaryjnej, nawet przy najwyższej jakości testach. W takim wypadku zdarza się konieczność wgrania ręcznie małej poprawki na serwerze produkcyjnym. To moja działka.
 
 Innym przykładem może być na przykład jak najszybsze przerzucenie bazy danych pomiędzy dwoma różnymi środowiskami. Wtedy jestem odpowiedzialny za porównanie schematów baz danych, znalezienie ich różnic, przygotowanie "przeniesienia" oraz jego przeprowadzenie - od początku do końca.
 
@@ -81,7 +81,7 @@ Django rest framework jest używany na potrzeby tworzenia REST Api.
 
 ## Postgres
 
-Na codzień używam (// TODO: Używam czy używamy?)bazy danych Postgres. Jest darmowa, potężna i znana. Jest idealnym partnerem do pracy z Django.
+Na codzień używam bazy danych Postgres. Jest darmowa, potężna i znana. Jest idealnym partnerem do pracy z Django.
 Ponadto często pojawia się konieczność stworzenia widoku, czy procedury w czystym SQL.
 
 
@@ -131,7 +131,8 @@ Poza tym pisanie skryptów usprawniających pracę moją oraz zespołu to mój c
 ## CI/CD
 
 Jedno słowo. Jenkins.
-Stworzyłem już kilka kompletnych workflowów używając jobów Jenkinsa. Zdarzyło mi się też używać pipelinów, ale ostatecznie przy projektach (// TODO: Chodzi o to ze przy priojektaj malej wielkosci uznalem to za overkill) uznałem to za overkill.
+Stworzyłem już kilka kompletnych workflowów używając jobów Jenkinsa. Zdarzyło mi się też używać pipelinów, ale ostatecznie przy projektach, przy których obecnie pracuję byłby to overkill.
+
 
 # Inne języki programowania, których używałem
 
@@ -189,7 +190,7 @@ Jednak jeśli już uda mi się odejść od programowania, jest kilka rzeczy, kt�
 
 # Kontakt
 
-Najlepszym sposobem kontaktu jest dla mnie e-mail.
+Najlepszym sposobem kontaktu do mnie e-mail.
 E-mail: **michal.przyl@gmail.com**
 
 
