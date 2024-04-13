@@ -1,4 +1,23 @@
+body{
+  background: black;
+  color: #CCCCCC;
+  width: 50%;
+  margin: 20px auto 20px auto;
+  border: 5px solid #808080;
+  text-align: justify;
+  padding: 30px;
+  font-family: 'calibri', sans-serif;
+  font-size: 18;
+  width: 40%;
+}
+
+
+
 h1{
-  font-size: 20px;
-  color: red;
+  /* font-size: 20px; */
+  /* color: green; */
+  text-align: center;
+}
+h2{
+  /* font-size: 18; */
 }
