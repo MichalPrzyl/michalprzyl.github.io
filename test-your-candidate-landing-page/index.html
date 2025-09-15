@@ -10,102 +10,47 @@
   <meta name="theme-color" content="#0E7CFF" />
   <style>
     :root {
-      --bg: #0f172a;          /* slate-900 */
-      --panel: #111827;       /* gray-900 */
-      --muted: #94a3b8;       /* slate-400 */
-      --text: #e5e7eb;        /* gray-200 */
-      --accent: #0ea5e9;      /* sky-500 */
-      --accent-2: #38bdf8;    /* sky-400 */
-      --ok: #10b981;          /* emerald-500 */
-      --warn: #f59e0b;        /* amber-500 */
-      --danger: #ef4444;      /* red-500 */
-      --card: #0b1220;        /* custom dark card */
-      --border: #1f2937;      /* gray-800 */
+      --bg: #0f172a;
+      --panel: #111827;
+      --muted: #94a3b8;
+      --text: #e5e7eb;
+      --accent: #0ea5e9;
+      --accent-2: #38bdf8;
+      --border: #1f2937;
       --shadow: 0 10px 30px rgba(2, 6, 23, 0.6);
       --radius: 16px;
     }
     * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; background: radial-gradient(1200px 600px at 70% -10%, #09345255, transparent 60%), var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    body { margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, sans-serif; }
     a { color: var(--accent-2); text-decoration: none; }
     .container { width: min(1100px, 94vw); margin: 0 auto; }
-    header { position: sticky; top: 0; z-index: 40; backdrop-filter: blur(8px); background: linear-gradient(180deg, rgba(15,23,42,0.9), rgba(15,23,42,0.6)); border-bottom: 1px solid var(--border); }
+    header { position: sticky; top: 0; z-index: 40; backdrop-filter: blur(8px); background: rgba(15,23,42,0.9); border-bottom: 1px solid var(--border); }
     .nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
-    .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: .3px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; }
     .logo { width: 36px; height: 36px; border-radius: 10px; background: linear-gradient(135deg, var(--accent), var(--accent-2)); display: grid; place-items: center; box-shadow: var(--shadow); }
     .logo::after { content: "T"; font-weight: 900; color: white; }
-    .nav a { color: var(--text); opacity: .9; margin: 0 10px; font-size: 14px; }
     .cta { padding: 10px 16px; border-radius: 999px; background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #001025; font-weight: 700; border: 0; cursor: pointer; transition: transform .08s ease, filter .2s ease; }
     .cta:hover { transform: translateY(-1px); filter: brightness(1.08); }
 
-    /* Hero */
-    .hero { padding: 52px 0 18px; position: relative; }
-    .hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 36px; align-items: center; }
-    .h1 { font-size: clamp(28px, 5vw, 48px); line-height: 1.05; margin: 8px 0 14px; letter-spacing: -0.02em; }
+    .hero { padding: 52px 0; text-align: center; }
+    .h1 { font-size: clamp(28px, 5vw, 48px); margin: 8px 0 14px; }
     .sub { color: var(--muted); font-size: clamp(15px, 2.2vw, 18px); }
-    .badges { display: flex; flex-wrap: wrap; gap: 10px; margin: 18px 0 24px; }
-    .badge { background: #0a1221; border: 1px solid var(--border); color: #cbd5e1; padding: 8px 12px; border-radius: 999px; font-size: 12px; }
 
-    .card { background: linear-gradient(180deg, #0b1220, #0b1220f5); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
-    .signup { padding: 18px; }
-    .signup h3 { margin: 0 0 10px; font-size: 16px; color: #cbd5e1; }
-    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-    label { font-size: 12px; color: var(--muted); display: block; margin-bottom: 6px; }
-    input { width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--border); background: #0a1324; color: var(--text); outline: none; }
-    input::placeholder { color: #708198; }
-    .signup .cta { width: 100%; padding: 14px 16px; margin-top: 8px; }
-    .micro { color: var(--muted); font-size: 12px; text-align: center; margin-top: 6px; }
+    .video { margin: 26px 0 44px; text-align: center; }
+    .video iframe { width: 100%; max-width: 800px; height: 450px; border: 0; border-radius: var(--radius); }
 
-    .kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 16px; }
-    .kpi { padding: 14px; border-radius: 12px; background: #0a1221; border: 1px solid var(--border); text-align: center; }
-    .kpi strong { display: block; font-size: 18px; }
-    .kpi span { color: var(--muted); font-size: 12px; }
+    .features, .steps, .testimonial, .cta-band, .faq { text-align: center; }
+    .features .grid-4, .steps .items { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 14px; margin-top: 20px; }
 
-    /* Video */
-    .video { margin: 26px 0 44px; }
-    .video .card { overflow: hidden; }
-    .video .frame { position: relative; width: 100%; padding-top: 56.25%; }
-    .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    .feature, .step, .quote { padding: 16px; border: 1px solid var(--border); border-radius: 14px; background: #0b1220; }
+    .quote { text-align: center; }
 
-    /* Features */
-    .features { padding: 20px 0 10px; }
-    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
-    .feature { padding: 16px; border: 1px solid var(--border); background: #0b1220; border-radius: 14px; }
-    .feature h4 { margin: 6px 0 6px; }
-    .icon { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: #0a1221; border: 1px solid var(--border); font-size: 18px; }
-    .feature p { color: var(--muted); font-size: 14px; }
+    .testimonial .container { display: flex; flex-direction: column; align-items: center; gap: 14px; }
 
-    /* Steps */
-    .steps { padding: 28px 0; }
-    .steps .items { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
-    .step { background: #0b1220; border: 1px solid var(--border); border-radius: 14px; padding: 16px; }
-    .step .num { width: 28px; height: 28px; border-radius: 999px; background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #001025; font-weight: 900; display: inline-grid; place-items: center; }
-    .step p { color: var(--muted); font-size: 14px; }
+    .cta-band { margin: 30px 0; padding: 18px; border: 1px solid var(--border); border-radius: var(--radius); background: linear-gradient(135deg, rgba(14,165,233,0.12), rgba(56,189,248,0.08)); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; text-align: center; }
+    .cta-band h3 { margin: 0; width: 100%; text-align: center; }
 
-    /* Testimonial */
-    .testimonial { padding: 20px 0; }
-    .testimonial .container { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; justify-items: center; }
-    .quote { padding: 18px; border: 1px solid var(--border); background: #0b1220; border-radius: 14px; text-align: center; }
-
-    /* CTA band */
-    .cta-band { margin: 30px 0; padding: 18px; border: 1px solid var(--border); border-radius: var(--radius); background: linear-gradient(135deg, rgba(14,165,233,0.12), rgba(56,189,248,0.08)); display: flex; align-items: center; justify-content: center; gap: 14px; text-align: center; }
-
-    /* FAQ */
-    .faq { padding: 16px 0 40px; }
-    .accordion { border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
-    .acc-item + .acc-item { border-top: 1px solid var(--border); }
-    .acc-btn { width: 100%; text-align: left; background: #0b1220; color: var(--text); border: 0; padding: 16px; font-size: 16px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
-    .acc-panel { max-height: 0; overflow: hidden; transition: max-height .25s ease; background: #0a1221; color: var(--muted); padding: 0 16px; }
-    .acc-panel.open { padding: 16px; }
-
-    footer { border-top: 1px solid var(--border); color: var(--muted); padding: 24px 0 40px; font-size: 14px; }
-
-    /* Utilities */
-    h2.section-title { font-size: 22px; margin: 0 0 12px; letter-spacing: .2px; }
-    .muted { color: var(--muted); }
-
-    /* Responsive */
-    @media (max-width: 960px) { .cta-band{ grid-template-columns: 1fr; } .cta-band > div{ justify-self: center; } .hero-grid { grid-template-columns: 1fr; } .grid-4, .steps .items, .testimonial .container { grid-template-columns: 1fr; } .kpis { grid-template-columns: repeat(3, 1fr); } }
-    @media (max-width: 600px) { .nav a { display: none; } .kpis { grid-template-columns: 1fr 1fr; } .row { grid-template-columns: 1fr; } .grid-4 { grid-template-columns: 1fr; } }
+    footer { border-top: 1px solid var(--border); color: var(--muted); padding: 24px 0 40px; font-size: 14px; text-align: center; }
   </style>
 </head>
 <body>
@@ -119,152 +64,76 @@
         <a href="#video">Demo</a>
         <a href="#features">Funkcje</a>
         <a href="#faq">FAQ</a>
-        <button class="cta" onclick="scrollToSignup()">Zarejestruj się</button>
+        <button class="cta" onclick="goToApp()">Wypróbuj za darmo</button>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- HERO -->
     <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <div class="badges">
-            <span class="badge">Darmowy plan</span>
-            <span class="badge">Rejestracja w 10s</span>
-            <span class="badge">Bez karty kredytowej</span>
-          </div>
-          <h1 class="h1">Rekrutuj szybciej. Testy kandydatów w 30 sekund.</h1>
-          <p class="sub">Stwórz test, wyślij kandydatowi i oceń odpowiedzi w jednym miejscu. Prosto i bez wdrożeń.</p>
-
-          <div class="kpis">
-            <div class="kpi"><strong>4 kroki</strong><span>od testu do oceny</span></div>
-            <div class="kpi"><strong>20 s</strong><span>demo działania</span></div>
-            <div class="kpi"><strong>0 zł</strong><span>na start</span></div>
-          </div>
-        </div>
-
-        <aside class="card signup" id="signup">
-          <h3>Zacznij teraz — wypełnij 2 pola</h3>
-          <form id="signup-form" novalidate>
-            <div class="row">
-              <div>
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" placeholder="jan.kowalski@firma.pl" required />
-              </div>
-              <div>
-                <label for="password">Hasło</label>
-                <input id="password" name="password" type="password" placeholder="••••••••" minlength="6" required />
-              </div>
-            </div>
-            <button class="cta" type="submit" id="cta-submit">
-              <span class="cta-text">Zarejestruj się i wyślij pierwszy test</span>
-            </button>
-            <p class="micro">Klikając „Zarejestruj się” akceptujesz <a href="#">regulamin</a>. Możesz anulować w każdej chwili.</p>
-          </form>
-        </aside>
+      <div class="container">
+        <h1 class="h1">Rekrutuj szybciej. Testy kandydatów w 30 sekund.</h1>
+        <p class="sub">Stwórz test, wyślij kandydatowi i oceń odpowiedzi w jednym miejscu. Prosto i bez wdrożeń.</p>
+        <button class="cta" onclick="goToApp()">Wypróbuj za darmo</button>
       </div>
     </section>
 
-    <!-- VIDEO DEMO -->
     <section class="video" id="video">
       <div class="container">
-        <h2 class="section-title">Zobacz jak działa</h2>
-        <p class="muted">Dodaj kandydata → Stwórz test → Wyślij link → Oceń odpowiedzi i zobacz wykresy.</p>
-        <div class="card">
-          <div class="frame">
-            <!-- Podmień VIDEO_ID na swój identyfikator filmu YouTube -->
-            <iframe title="Test your candidate — szybki przegląd" src="https://www.youtube-nocookie.com/embed/VIDEO_ID?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&playsinline=1&loop=1&playlist=VIDEO_ID" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
+        <h2>Zobacz jak działa</h2>
+        <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID?autoplay=0&mute=1&controls=1&modestbranding=1&rel=0" allowfullscreen></iframe>
       </div>
     </section>
 
-    <!-- FEATURES -->
     <section class="features" id="features">
       <div class="container">
-        <h2 class="section-title">Wszystko, czego potrzebujesz</h2>
+        <h2>Wszystko, czego potrzebujesz</h2>
         <div class="grid-4">
-          <div class="feature">
-            <div class="icon" aria-hidden="true">➕</div>
-            <h4>Dodajesz kandydatów w sekundę</h4>
-            <p>Zero skomplikowanych formularzy — wprowadź adres e‑mail i gotowe.</p>
-          </div>
-          <div class="feature">
-            <div class="icon" aria-hidden="true">📝</div>
-            <h4>Tworzysz testy i pytania</h4>
-            <p>Proste odpowiedzi tekstowe. Bez checkboxów i rozpraszaczy.</p>
-          </div>
-          <div class="feature">
-            <div class="icon" aria-hidden="true">📩</div>
-            <h4>Wysyłasz link jednym kliknięciem</h4>
-            <p>Automatyczny e‑mail do kandydata z bezpiecznym linkiem.</p>
-          </div>
-          <div class="feature">
-            <div class="icon" aria-hidden="true">📊</div>
-            <h4>Oceniasz i widzisz wykresy</h4>
-            <p>Wyniki zapisują się automatycznie — Ty tylko oceniasz odpowiedzi.</p>
-          </div>
+          <div class="feature"><h4>Dodajesz kandydatów</h4><p>Szybko i prosto, bez zbędnych pól.</p></div>
+          <div class="feature"><h4>Tworzysz testy</h4><p>Proste pytania i odpowiedzi tekstowe.</p></div>
+          <div class="feature"><h4>Wysyłasz link</h4><p>Jeden klik i kandydat ma test w skrzynce.</p></div>
+          <div class="feature"><h4>Oceniasz odpowiedzi</h4><p>System zapisuje wyniki i rysuje wykresy.</p></div>
         </div>
       </div>
     </section>
 
-    <!-- STEPS -->
     <section class="steps">
       <div class="container">
-        <h2 class="section-title">Jak to działa — 4 kroki</h2>
+        <h2>Jak to działa</h2>
         <div class="items">
-          <div class="step"><span class="num">1</span><h4>Stwórz test</h4><p>Dodaj pytania dopasowane do roli.</p></div>
-          <div class="step"><span class="num">2</span><h4>Dodaj kandydata</h4><p>Wpisz email — system zajmie się resztą.</p></div>
-          <div class="step"><span class="num">3</span><h4>Wyślij link</h4><p>Jedno kliknięcie i test ląduje w skrzynce.</p></div>
-          <div class="step"><span class="num">4</span><h4>Oceń i działaj</h4><p>Sprawdź odpowiedzi, zobacz wykresy, wybierz najlepszych.</p></div>
+          <div class="step"><h4>1. Stwórz test</h4><p>Dodaj pytania dopasowane do roli.</p></div>
+          <div class="step"><h4>2. Dodaj kandydata</h4><p>Wpisz email i gotowe.</p></div>
+          <div class="step"><h4>3. Wyślij link</h4><p>Kandydat dostaje test mailem.</p></div>
+          <div class="step"><h4>4. Oceń odpowiedzi</h4><p>Zobacz wyniki i wykresy.</p></div>
         </div>
       </div>
     </section>
 
-    <!-- TESTIMONIAL / SOCIAL PROOF -->
     <section class="testimonial">
       <div class="container">
         <div class="quote">
-          <p>„Test your candidate skróciło nasz proces rekrutacji o połowę. Wreszcie wszystko jest w jednym miejscu.”</p>
+          <p>„Test your candidate skróciło nasz proces rekrutacji o połowę.”</p>
           <p class="muted">— Anna, HR Manager</p>
         </div>
         <div class="quote">
-          <p><strong>12 430+</strong> odpowiedzi kandydatów ocenionych w ostatnim miesiącu.</p>
-          <p class="muted">Dołącz do rosnącej społeczności rekruterów.</p>
+          <p><strong>12 430+</strong> odpowiedzi ocenionych w ostatnim miesiącu.</p>
         </div>
       </div>
     </section>
 
-    <!-- CTA BAND -->
-    <section class="cta-band container">
-      <div>
-        <h3>Wypróbuj za darmo — wyślij pierwszy test dzisiaj</h3>
-        <p class="muted">Rejestracja w 10 sekund. Bez karty. Anulujesz kiedy chcesz.</p>
-      </div>
-      <div>
-        <button class="cta" onclick="scrollToSignup()">Zacznij teraz</button>
+    <section class="cta-band">
+      <div class="container">
+        <h3>Wypróbuj za darmo — przejdź do aplikacji</h3>
+        <button class="cta" onclick="goToApp()">Zacznij teraz</button>
       </div>
     </section>
 
-    <!-- FAQ -->
     <section class="faq" id="faq">
       <div class="container">
-        <h2 class="section-title">FAQ</h2>
-        <div class="accordion" id="accordion">
-          <div class="acc-item">
-            <button class="acc-btn">Czy Test your candidate jest darmowe?<span>+</span></button>
-            <div class="acc-panel"><p>Tak, zacznij od darmowego planu. Gdy będziesz potrzebować więcej — przełączysz się jednym kliknięciem.</p></div>
-          </div>
-          <div class="acc-item">
-            <button class="acc-btn">Czy mogę dodać wielu kandydatów?<span>+</span></button>
-            <div class="acc-panel"><p>Tak. Dodawaj pojedynczo lub importuj listę — w wiadomości każdy otrzyma swój unikalny link.</p></div>
-          </div>
-          <div class="acc-item">
-            <button class="acc-btn">Czy dane są bezpieczne?<span>+</span></button>
-            <div class="acc-panel"><p>Tak. Stosujemy szyfrowanie w spoczynku i w tranzycie oraz kontrolę dostępu po stronie pracodawcy.</p></div>
-          </div>
-        </div>
+        <h2>FAQ</h2>
+        <div class="quote"><h4>Czy to darmowe?</h4><p>Tak, zacznij od darmowego planu.</p></div>
+        <div class="quote"><h4>Czy mogę dodać wielu kandydatów?</h4><p>Oczywiście, każdy dostaje unikalny link.</p></div>
+        <div class="quote"><h4>Czy dane są bezpieczne?</h4><p>Tak, używamy szyfrowania i kontroli dostępu.</p></div>
       </div>
     </section>
   </main>
@@ -272,87 +141,12 @@
   <footer>
     <div class="container">
       <div class="muted">© <span id="year"></span> Test your candidate. Wszelkie prawa zastrzeżone.</div>
-      <div class="muted"><a href="#">Regulamin</a> · <a href="#">Polityka prywatności</a> · <a href="#">Kontakt</a></div>
     </div>
   </footer>
 
   <script>
-    // Sticky header shadow on scroll (subtle visual feedback)
-    const header = document.querySelector('header');
-    let lastY = 0;
-    window.addEventListener('scroll', () => {
-      const y = window.scrollY || document.documentElement.scrollTop;
-      if (y > 6 && lastY <= 6) header.style.boxShadow = '0 6px 20px rgba(0,0,0,.25)';
-      if (y <= 6 && lastY > 6) header.style.boxShadow = 'none';
-      lastY = y;
-    });
-
-    // Smooth scroll to signup card
-    function scrollToSignup() {
-      document.getElementById('signup').scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-
-    // FAQ accordion
-    document.querySelectorAll('.acc-btn').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const panel = btn.nextElementSibling;
-        const open = panel.classList.toggle('open');
-        panel.style.maxHeight = open ? panel.scrollHeight + 'px' : '0px';
-        btn.querySelector('span').textContent = open ? '−' : '+';
-      });
-    });
-
-    // Year in footer
+    function goToApp(){ window.location.href = "/app"; }
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Mock signup submit
-    const form = document.getElementById('signup-form');
-    const submitBtn = document.getElementById('cta-submit');
-    const ctaText = submitBtn.querySelector('.cta-text');
-
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const email = form.email.value.trim();
-      const password = form.password.value.trim();
-
-      // simple client-side validation
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        alert('Podaj poprawny adres e‑mail.');
-        return;
-      }
-      if (password.length < 6) {
-        alert('Hasło musi mieć co najmniej 6 znaków.');
-        return;
-      }
-
-      // Simulacja „rejestracji” — tu podepnij prawdziwe API
-      submitBtn.disabled = true;
-      const oldText = ctaText.textContent;
-      ctaText.textContent = 'Zakładanie konta…';
-
-      setTimeout(() => {
-        // Możesz tu wykonać fetch('/api/register', { method: 'POST', body: ... })
-        localStorage.setItem('attempts-user', JSON.stringify({ email, ts: Date.now() }));
-        ctaText.textContent = 'Gotowe! Przejdź do tworzenia testu →';
-        submitBtn.style.filter = 'brightness(1.08)';
-        submitBtn.disabled = false;
-        // Scroll do sekcji kroków jako kolejny „success action”
-        document.querySelector('.steps').scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }, 800);
-
-      // Prosty „analytics”
-      console.log('[Analytics] signup_submit', { emailMasked: email.replace(/(.).+(@.*)/, '$1***$2') });
-    });
-
-    // Jeśli „zarejestrowany”, pokaż inny tekst
-    (function initState() {
-      try {
-        const u = JSON.parse(localStorage.getItem('attempts-user') || 'null');
-        if (u) {
-          ctaText.textContent = 'Wróć do aplikacji →';
-        }
-      } catch (e) {}
-    })();
   </script>
 </body>
 </html>
