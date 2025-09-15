@@ -1,0 +1,1 @@
+sudo python3 serve2.py --certfile <certfile> --keyfile <keyfile> --host 0.0.0.0 --port <port>
